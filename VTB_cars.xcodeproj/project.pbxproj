@@ -13,6 +13,8 @@
 		3A494F512530E18300E239A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A494F4F2530E18300E239A7 /* Main.storyboard */; };
 		3A494F532530E18400E239A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A494F522530E18400E239A7 /* Assets.xcassets */; };
 		3A494F562530E18400E239A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A494F542530E18400E239A7 /* LaunchScreen.storyboard */; };
+		3A494F662530E54400E239A7 /* CarShowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A494F652530E54400E239A7 /* CarShowingController.swift */; };
+		3A494F6D2530E62100E239A7 /* ViewControllerCameraExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A494F6C2530E62100E239A7 /* ViewControllerCameraExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3A494F522530E18400E239A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A494F552530E18400E239A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A494F572530E18400E239A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A494F652530E54400E239A7 /* CarShowingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarShowingController.swift; sourceTree = "<group>"; };
+		3A494F6C2530E62100E239A7 /* ViewControllerCameraExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCameraExtension.swift; sourceTree = "<group>"; };
+		3A494F6F2530EA0E00E239A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		3A494F702530EA0F00E239A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,49 @@
 		3A494F482530E18300E239A7 /* VTB_cars */ = {
 			isa = PBXGroup;
 			children = (
-				3A494F492530E18300E239A7 /* AppDelegate.swift */,
-				3A494F4B2530E18300E239A7 /* SceneDelegate.swift */,
-				3A494F4D2530E18300E239A7 /* ViewController.swift */,
-				3A494F4F2530E18300E239A7 /* Main.storyboard */,
+				3A494F632530E37100E239A7 /* Extensions */,
+				3A494F622530E36900E239A7 /* Model */,
+				3A494F612530E36600E239A7 /* View */,
+				3A494F5F2530E36000E239A7 /* Controller */,
 				3A494F522530E18400E239A7 /* Assets.xcassets */,
-				3A494F542530E18400E239A7 /* LaunchScreen.storyboard */,
 				3A494F572530E18400E239A7 /* Info.plist */,
 			);
 			path = VTB_cars;
+			sourceTree = "<group>";
+		};
+		3A494F5F2530E36000E239A7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3A494F4D2530E18300E239A7 /* ViewController.swift */,
+				3A494F652530E54400E239A7 /* CarShowingController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3A494F612530E36600E239A7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3A494F4F2530E18300E239A7 /* Main.storyboard */,
+				3A494F542530E18400E239A7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A494F622530E36900E239A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A494F4B2530E18300E239A7 /* SceneDelegate.swift */,
+				3A494F492530E18300E239A7 /* AppDelegate.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A494F632530E37100E239A7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3A494F6C2530E62100E239A7 /* ViewControllerCameraExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +148,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 3A494F3D2530E18300E239A7;
 			productRefGroup = 3A494F472530E18300E239A7 /* Products */;
@@ -137,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A494F6D2530E62100E239A7 /* ViewControllerCameraExtension.swift in Sources */,
 				3A494F4E2530E18300E239A7 /* ViewController.swift in Sources */,
 				3A494F4A2530E18300E239A7 /* AppDelegate.swift in Sources */,
+				3A494F662530E54400E239A7 /* CarShowingController.swift in Sources */,
 				3A494F4C2530E18300E239A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +193,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A494F502530E18300E239A7 /* Base */,
+				3A494F6F2530EA0E00E239A7 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -158,6 +202,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				3A494F552530E18400E239A7 /* Base */,
+				3A494F702530EA0F00E239A7 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -169,6 +214,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -230,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
