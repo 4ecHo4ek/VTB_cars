@@ -15,6 +15,7 @@
 		3A494F562530E18400E239A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A494F542530E18400E239A7 /* LaunchScreen.storyboard */; };
 		3A494F662530E54400E239A7 /* CarShowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A494F652530E54400E239A7 /* CarShowingController.swift */; };
 		3A494F6D2530E62100E239A7 /* ViewControllerCameraExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A494F6C2530E62100E239A7 /* ViewControllerCameraExtension.swift */; };
+		3A51956325321CA8002CD3CB /* ModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A51956225321CA8002CD3CB /* ModelManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		3A494F6C2530E62100E239A7 /* ViewControllerCameraExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCameraExtension.swift; sourceTree = "<group>"; };
 		3A494F6F2530EA0E00E239A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		3A494F702530EA0F00E239A7 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A51956225321CA8002CD3CB /* ModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			children = (
 				3A494F4B2530E18300E239A7 /* SceneDelegate.swift */,
 				3A494F492530E18300E239A7 /* AppDelegate.swift */,
+				3A51956225321CA8002CD3CB /* ModelManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				3A494F4A2530E18300E239A7 /* AppDelegate.swift in Sources */,
 				3A494F662530E54400E239A7 /* CarShowingController.swift in Sources */,
 				3A494F4C2530E18300E239A7 /* SceneDelegate.swift in Sources */,
+				3A51956325321CA8002CD3CB /* ModelManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
