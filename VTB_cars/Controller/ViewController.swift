@@ -11,15 +11,18 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
 
     var imageData: UIImage? {
         didSet {
-           
-            let imageToSend = imageData?.description
             
-            let headers = [
-              "x-ibm-client-id": "a92943b7bb34f5a779859791088a91da",
+           imageData = UIImage(named: "solaris-2")
+            
+            var imageToSend = imageData?.pngData()?.base64EncodedString() as Any
+           
+                        let headers = [
+              "x-ibm-client-id": "d38ab26eb05b9a9c8c8312093bb8e4ea",
               "content-type": "application/json",
               "accept": "application/json"
             ]
-            let parameters = ["content": imageToSend as Any] as [String : Any]
+            
+            let parameters = ["content": imageToSend] as [String : Any]
 
            
             let postData = try? JSONSerialization.data(withJSONObject: parameters, options: [])
@@ -31,7 +34,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
             request.httpMethod = "POST"
             request.allHTTPHeaderFields = headers
             request.httpBody = postData!
-
+            
             let session = URLSession.shared
             let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
               if (error != nil) {
